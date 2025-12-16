@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Template</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <hr>
+
+    <h2>Spots (for loop)</h2>
+    <ol>
+        {% for spot in spots %}
+        <li><h3>{{ spot }}</h3></li>
+        {% endfor %}
+    </ol>
+    
+</body>
+</html>
