@@ -27,3 +27,9 @@ def spots():
     title = 'Favorite Spots'
     spots = ['Football','Batminton','Ping Pong','Swimming','Bike']
     return render_template('spots.html',title=title,spots=spots)
+
+@app.route('/favorite/movies')
+def movies():
+    title = 'Favorite Movies'
+    movies = ['Steve Job','The Social Network','One Piece','Naruto','Scoopy Doo']
+    return render_template('movies.html',title=title,movies=movies)
